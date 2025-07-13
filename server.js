@@ -1,9 +1,9 @@
 import express from "express"
 import cors from "cors"
-import connectToDb from "../server/config/db.js"
+import connectToDb from './config/db.js'
 import cookieParser from "cookie-parser"
-import userRoute from "../server/routes/userRoute.js"
-import taskRoute from "../server/routes/taskRoute.js"
+import userRoute from './routes/userRoute.js'
+import taskRoute from './routes/taskRoute.js'
 
 const app = express()
 const PORT = process.env.PORT || 4001
