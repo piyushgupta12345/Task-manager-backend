@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 4001
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://task-manager-project-xi.vercel.app",
     credentials: true
 }))
 
