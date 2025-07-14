@@ -101,7 +101,7 @@ export const loginController = async (req, res) => {
         // genrate token
         const token = genrateToken(user)
 
-        return res.cookie("token", token, { httpOnly: true, maxAge: 7 * 24 * 60 * 60 * 1000 }).status(200).json({
+        return res.cookie("token", token, { httpOnly: true, secure: true, maxAge: 7 * 24 * 60 * 60 * 1000 }).status(200).json({
             success: true,
             message: "Login Successfully",
             data: user
